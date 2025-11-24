@@ -268,11 +268,6 @@ function RuleCard() {
           <li>Alerts are rate-limited to once every 30 minutes per asset.</li>
         </ul>
         <Separator />
-        <div className="flex items-center gap-3 rounded-lg border bg-muted/30 p-3 text-xs">
-          <Brain className="h-4 w-4" />
-          Vercel AI SDK + OpenRouter produce the commentary used inside
-          notifications.
-        </div>
       </CardContent>
     </Card>
   );
@@ -507,11 +502,6 @@ function App() {
                 </Button>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground">
-              Tracks wallet holdings in Convex, polls Binance for real-time
-              prices, evaluates a shared alert rule, and enriches notifications
-              with AI commentary.
-            </p>
           </div>
 
           {isLoading ? (
@@ -569,9 +559,6 @@ function App() {
                       <Wallet className="h-5 w-5 text-primary" />
                       Wallet breakdown
                     </CardTitle>
-                    <CardDescription>
-                      Live valuations based on the latest Binance price.
-                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <AssetTable assets={assets} />
@@ -583,9 +570,6 @@ function App() {
                       <Bell className="h-5 w-5 text-primary" />
                       Notifications
                     </CardTitle>
-                    <CardDescription>
-                      AI-enriched alerts when the shared rule fires.
-                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <AlertFeed alerts={alerts} />
