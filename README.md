@@ -56,11 +56,3 @@
    - Symbol, last price, percentage move.
    - AI-generated commentary explaining why the alert mattered plus a suggestion.
 4. Leave the Convex dev server running to execute cron-based checks automatically.
-
-## Loom Walkthrough
-
-Record a short Loom (or similar) covering:
-
-1. High-level architecture and data flow (Convex schema, cron, AI action).
-2. Live demonstration of the dashboard, adding assets, and alert generation.
-3. Any noteworthy implementation details or trade-offs.
